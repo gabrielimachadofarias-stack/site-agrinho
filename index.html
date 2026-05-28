@@ -3,27 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo das Flores Rosas - Beleza e Sensibilidade</title>
+    <title>CãoPpanheiro - Seu Novo Melhor Amigo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <a href="#conteudo-principal" class="sr-only-focusable">Pular para o conteúdo principal</a>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
     <div class="accessibility-bar" role="toolbar" aria-label="Ferramentas de Acessibilidade">
-        <button id="btn-contrast" aria-pressed="false">Modo Alto Contraste</button>
+        <button id="btn-contrast" aria-pressed="false">🌓 Alto Contraste</button>
         <button id="btn-font-increase" aria-label="Aumentar tamanho do texto">A+</button>
         <button id="btn-font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
     </div>
 
     <header class="main-header">
         <div class="header-container">
-            <div class="logo">Rosaceae</div>
+            <div class="logo">🐶 CãoPpanheiro</div>
             <nav aria-label="Navegação Principal">
                 <ul class="nav-links">
-                    <li><a href="#galeria">Espécies</a></li>
-                    <li><a href="#cuidados">Como Cuidar</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#cuidados">Cuidados</a></li>
                 </ul>
             </nav>
         </div>
-    </
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">O companheiro perfeito para a sua vida</h1>
+                <p>Descubra a alegria, a fofura e a lealdade incondicional que só um cãozinho pode trazer para o seu dia a dia.</p>
+                <a href="#galeria" class="btn-primary">Ver Fofuras</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="reveal-section" aria-labelledby="sobre-title">
+            <div class="container">
+                <h2 id="sobre-title">Por que eles são tão apaixonantes?</h2>
+                <div class="grid-two-columns">
+                    <article class="about-text">
+                        <h3>Amor em quatro patas</h3>
+                        <p>Cachorros não são apenas animais de estimação; eles fazem parte da família. Estudos mostram que conviver com um cachorro fofo reduz o estresse, melhora o humor e até estimula atividades físicas diárias.</p>
+                    </article>
+                    <div class="about-image-placeholder" role="img" aria-label="Ilustração estilizada de um cachorro feliz abanando o rabo">🐾</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="reveal-section" aria-labelledby="galeria-title">
+            <div class="container">
+                <h2 id="galeria-title">Galeria de Fofuras</h2>
+                <p class="section-subtitle">Conheça nossos modelos caninos do mês</p>
+                
+                <div class="carousel" role="region" aria-roledescription="carrossel" aria-label="Galeria de fotos de cachorros">
+                    <div class="carousel-inner" id="carousel-container" aria-live="polite">
+                        </div>
+                    <div class="carousel-controls">
+                        <button id="prev-slide" aria-label="Slide anterior">❮</button>
+                        <button id="next-slide" aria-label="Próximo slide">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cuidados" class="reveal-section" aria-labelledby="cuidados-title">
+            <div class="container">
+                <h2 id="cuidados-title">Guia de Cuidados Essenciais</h2>
+                <p class="section-subtitle">Clique nos tópicos abaixo para expandir e saber mais.</p>
+                
+                <div id="accordion-container" class="accordion">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 CãoPpanheiro. Desenvolvido com foco em Experiência do Usuário e Acessibilidade.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
